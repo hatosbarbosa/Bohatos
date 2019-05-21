@@ -54,14 +54,54 @@
 		6F5D36272293344D00B1E9D1 /* Bohatos */ = {
 			isa = PBXGroup;
 			children = (
+				6F9CAD022294394A00AF0B68 /* Resources */,
+				6F9CAD01229435DD00AF0B68 /* Controller */,
+				6F9CAD00229435D600AF0B68 /* View */,
+				6F9CACFF229435CE00AF0B68 /* Model */,
 				6F5D36282293344D00B1E9D1 /* AppDelegate.swift */,
-				6F5D362A2293344D00B1E9D1 /* ViewController.swift */,
-				6F5D362C2293344D00B1E9D1 /* Main.storyboard */,
 				6F5D362F2293344F00B1E9D1 /* Assets.xcassets */,
-				6F5D36312293344F00B1E9D1 /* LaunchScreen.storyboard */,
 				6F5D36342293344F00B1E9D1 /* Info.plist */,
 			);
 			path = Bohatos;
+			sourceTree = "<group>";
+		};
+		6F9CACFF229435CE00AF0B68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F9CAD00229435D600AF0B68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D362C2293344D00B1E9D1 /* Main.storyboard */,
+				6F5D36312293344F00B1E9D1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F9CAD01229435DD00AF0B68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F5D362A2293344D00B1E9D1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6F9CAD022294394A00AF0B68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F9CAD032294395200AF0B68 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F9CAD032294395200AF0B68 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
