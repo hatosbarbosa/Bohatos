@@ -13,7 +13,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     var postItemList: [PostItem] = []
-    
+   // var 
     
     override func viewDidLoad() {
         super.viewDidLoad()
