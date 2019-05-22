@@ -9,8 +9,21 @@
 import Foundation
 
 struct PostItem : Codable {
-    var userId: Int32
-    var id: Int32
-    var title: String
-    var body: String
+    var word: String
+    var description: String
+    var date:String
 }
+
+
+/*
+ [{'repeat(200,200)':
+ {
+ "word": '{{lorem(1,"words")}}',
+ "description": '{{lorem(1,"sentences")}}',
+ "date": '{{moment(this.date(new Date(2014, 0, 1), new Date())).format("l")}}'
+ }  }
+ ]
+ 
+ 
+ 
+ */

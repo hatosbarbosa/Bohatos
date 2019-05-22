@@ -12,11 +12,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBOutlet weak var tableView: UITableView!
-//    var palavraDaSemanaList: [PalavraDaSemana] = [PalavraDaSemana(postDate: "10/10/2018", word: "Zigmeutica", description: "subst. fem. Aquilo que é zigmo"),
-//                                                  PalavraDaSemana(postDate: "10/10/2018", word: "Zigmeutica", description: "subst. fem. Aquilo que é zigmo"),
-//                                                  PalavraDaSemana(postDate: "10/10/2018", word: "Pentateuco", description: "do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
-//                                                  PalavraDaSemana(postDate: "10/10/2018", word: "Zigmeutica", description: "subst. fem. Aquilo que é zigmo")]
-   // var palavraDaSemanaList: [PalavraDaSemana] = []
     var postItemList: [PostItem] = []
     
     
@@ -42,8 +37,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 for post in response
                 {
-                    let postItem: PostItem = PostItem(userId: post.userId, id: post.id, title: post.title, body: post.body)
-                    self.postItemList.append(postItem)
+                    self.postItemList.append(post)
                 }
                 
                 DispatchQueue.main.async {
@@ -59,11 +53,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-
-    }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postItemList.count
@@ -74,9 +63,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let palavra = postItemList[indexPath.row]
         
-        cell.palavraDaSemanaLabel.text = palavra.title
-        cell.palavraDaSemanaDescription.text = palavra.body
-        cell.palavraDaSemanaDate.text = String(palavra.userId)
+        cell.palavraDaSemanaLabel.text = palavra.word
+        cell.palavraDaSemanaDescription.text = palavra.description
+        cell.palavraDaSemanaDate.text = palavra.date
         
         
         return cell
@@ -96,14 +85,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
-    
-    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let favorite = favoriteAction(at: indexPath)
-        return UISwipeActionsConfiguration(actions: [favorite])
-    }
-    
-    func favoriteAction(at: IndexPath) -> UIContextualAction
-    {
-        
-    }
+//    
+//    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//        let favorite = favoriteAction(at: indexPath)
+//        return UISwipeActionsConfiguration(actions: [favorite])
+//    }
+//    
+//    func favoriteAction(at: IndexPath) -> UIContextualAction
+//    {
+//        
+//    }
 }

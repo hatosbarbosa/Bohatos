@@ -15,7 +15,7 @@ class PalavraDaSemanaTableViewCell: UITableViewCell {
     @IBOutlet weak var palavraDaSemanaDescription: UILabel!
     @IBOutlet weak var palavraDaSemanaDate: UILabel!
     
-    public var palavra: PalavraDaSemana!
+   
     
     func setShadows() {
         backgroundLayer.layer.shadowColor = UIColor.black.cgColor
@@ -27,15 +27,7 @@ class PalavraDaSemanaTableViewCell: UITableViewCell {
         backgroundLayer.layer.rasterizationScale = UIScreen.main.scale
     }
     
-    
-    public init(reuseIdentifier: String, style: UITableViewCell.CellStyle, word: PalavraDaSemana)
-    {
-        super.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: reuseIdentifier)
-        self.palavraDaSemanaLabel.text = word.word
-        self.palavraDaSemanaDescription.text = word.description
-        self.palavraDaSemanaDate.text = word.postDate
-        
-    }
+
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
