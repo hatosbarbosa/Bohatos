@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1D0B622294459800E329EC /* PalavraDaSemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D0B612294459800E329EC /* PalavraDaSemana.swift */; };
+		6F1D0B64229446A200E329EC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D0B63229446A200E329EC /* Post.swift */; };
+		6F1D0B6622944E9700E329EC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D0B6522944E9700E329EC /* UIViewExtensions.swift */; };
+		6F1D0B682294514800E329EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D0B672294514800E329EC /* HomeViewController.swift */; };
+		6F1D0B6A229454B700E329EC /* PalavraDaSemanaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1D0B69229454B700E329EC /* PalavraDaSemanaTableViewCell.swift */; };
+		6F1D0B6C2294569600E329EC /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F1D0B6B2294569600E329EC /* SF-Pro-Display-Bold.otf */; };
+		6F1D0B6E229456A900E329EC /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F1D0B6D229456A900E329EC /* SF-Pro-Text-Regular.otf */; };
+		6F1D0B70229456BC00E329EC /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F1D0B6F229456BC00E329EC /* SF-Pro-Display-Light.otf */; };
 		6F5D36292293344D00B1E9D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D36282293344D00B1E9D1 /* AppDelegate.swift */; };
-		6F5D362B2293344D00B1E9D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D362A2293344D00B1E9D1 /* ViewController.swift */; };
 		6F5D362E2293344D00B1E9D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D362C2293344D00B1E9D1 /* Main.storyboard */; };
 		6F5D36302293344F00B1E9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D362F2293344F00B1E9D1 /* Assets.xcassets */; };
 		6F5D36332293344F00B1E9D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5D36312293344F00B1E9D1 /* LaunchScreen.storyboard */; };
+		6FB40ED4229486DE003CEF3B /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB40ED3229486DE003CEF3B /* ToDo.swift */; };
+		6FB40ED622949033003CEF3B /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB40ED522949033003CEF3B /* PostItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F1D0B612294459800E329EC /* PalavraDaSemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalavraDaSemana.swift; sourceTree = "<group>"; };
+		6F1D0B63229446A200E329EC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6F1D0B6522944E9700E329EC /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		6F1D0B672294514800E329EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6F1D0B69229454B700E329EC /* PalavraDaSemanaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalavraDaSemanaTableViewCell.swift; sourceTree = "<group>"; };
+		6F1D0B6B2294569600E329EC /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		6F1D0B6D229456A900E329EC /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		6F1D0B6F229456BC00E329EC /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
 		6F5D36252293344D00B1E9D1 /* Bohatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bohatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5D36282293344D00B1E9D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F5D362A2293344D00B1E9D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F5D362D2293344D00B1E9D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F5D362F2293344F00B1E9D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F5D36322293344F00B1E9D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F5D36342293344F00B1E9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FB40ED3229486DE003CEF3B /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		6FB40ED522949033003CEF3B /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +86,10 @@
 		6F9CACFF229435CE00AF0B68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6F1D0B612294459800E329EC /* PalavraDaSemana.swift */,
+				6F1D0B63229446A200E329EC /* Post.swift */,
+				6FB40ED3229486DE003CEF3B /* ToDo.swift */,
+				6FB40ED522949033003CEF3B /* PostItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -77,6 +99,7 @@
 			children = (
 				6F5D362C2293344D00B1E9D1 /* Main.storyboard */,
 				6F5D36312293344F00B1E9D1 /* LaunchScreen.storyboard */,
+				6F1D0B69229454B700E329EC /* PalavraDaSemanaTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -84,7 +107,7 @@
 		6F9CAD01229435DD00AF0B68 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6F5D362A2293344D00B1E9D1 /* ViewController.swift */,
+				6F1D0B672294514800E329EC /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -93,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				6F9CAD032294395200AF0B68 /* Fonts */,
+				6F1D0B6522944E9700E329EC /* UIViewExtensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -100,6 +124,9 @@
 		6F9CAD032294395200AF0B68 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				6F1D0B6B2294569600E329EC /* SF-Pro-Display-Bold.otf */,
+				6F1D0B6D229456A900E329EC /* SF-Pro-Text-Regular.otf */,
+				6F1D0B6F229456BC00E329EC /* SF-Pro-Display-Light.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -163,7 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F5D36332293344F00B1E9D1 /* LaunchScreen.storyboard in Resources */,
+				6F1D0B6E229456A900E329EC /* SF-Pro-Text-Regular.otf in Resources */,
 				6F5D36302293344F00B1E9D1 /* Assets.xcassets in Resources */,
+				6F1D0B6C2294569600E329EC /* SF-Pro-Display-Bold.otf in Resources */,
+				6F1D0B70229456BC00E329EC /* SF-Pro-Display-Light.otf in Resources */,
 				6F5D362E2293344D00B1E9D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F5D362B2293344D00B1E9D1 /* ViewController.swift in Sources */,
+				6F1D0B622294459800E329EC /* PalavraDaSemana.swift in Sources */,
+				6FB40ED4229486DE003CEF3B /* ToDo.swift in Sources */,
+				6F1D0B6A229454B700E329EC /* PalavraDaSemanaTableViewCell.swift in Sources */,
+				6F1D0B6622944E9700E329EC /* UIViewExtensions.swift in Sources */,
 				6F5D36292293344D00B1E9D1 /* AppDelegate.swift in Sources */,
+				6F1D0B64229446A200E329EC /* Post.swift in Sources */,
+				6FB40ED622949033003CEF3B /* PostItem.swift in Sources */,
+				6F1D0B682294514800E329EC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hatosbarbosa.Bohatos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -350,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hatosbarbosa.Bohatos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
