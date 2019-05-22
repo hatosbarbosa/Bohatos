@@ -94,13 +94,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             tableView.endUpdates()
             self.tableView.reloadData()
         }
+    }
 
-
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let favorite = favoriteAction(at: indexPath)
+        return UISwipeActionsConfiguration(actions: [favorite])
     }
     
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        <#code#>
+    func favoriteAction(at: IndexPath) -> UIContextualAction
+    {
+        
     }
-    
-    
 }
