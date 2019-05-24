@@ -8,10 +8,17 @@
 
 import Foundation
 
-struct PostItem : Codable {
+class PostItem : Codable {
     var word: String
     var description: String
     var date:String
+    
+    
+    init() {
+        self.word = "word"
+        self.description = "description"
+        self.date = "date"
+    }
 }
 
 
