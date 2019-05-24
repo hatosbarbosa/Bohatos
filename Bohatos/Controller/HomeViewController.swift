@@ -11,10 +11,14 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate{
    
     @IBOutlet weak var tableView: UITableView!
+    var refreshControl = UIRefreshControl()
+    
     var postItemList: [PostItem] = []
     var filteredPostItemList: [PostItem] = []
     var searchController = UISearchController(searchResultsController: nil)
-    
+    @objc func refresh(_ sender: Any) {
+        // Call webservice here after reload tableview.
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,31 +55,60 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             } catch {
                 print("failed")
             }
+                    
+            
         }
+
         
         
         // Searchbar - Setup
         searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = true    // try changing that later
+        searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Buscar palavras"
         navigationItem.searchController = searchController
-        let editButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(toggleEditing))
-        editButton.tintColor = UIColor.white
-        navigationItem.rightBarButtonItem = editButton
         
         
-        definesPresentationContext = true
+        self.editButtonItem.tintColor = .white
+        self.editButtonItem.action = #selector(toggleEditing)
+        navigationItem.rightBarButtonItem = self.editButtonItem
+        self.editButtonItem.title = "Editar"
+        
+       
+    
         
         
     }
     
     //MARK:- TableView Delegates
     
+    @objc func toggleEditing(){
+        self.tableView.isEditing = !self.tableView.isEditing
+        if(self.tableView.isEditing)
+        {
+            self.editButtonItem.title = "Feito"
+        } else {
+            self.editButtonItem.title = "Editar"
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering() {
             return filteredPostItemList.count
         }
         return postItemList.count
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        if (!isFiltering()){
+        let movedObject = self.postItemList[sourceIndexPath.row]
+        postItemList.remove(at: sourceIndexPath.row)
+        postItemList.insert(movedObject, at: destinationIndexPath.row)
+        }
+        else{ return }
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -120,8 +153,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
             
             return cell
-            
-            
         }
     
     }
@@ -137,7 +168,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             tableView.deleteRows(at: [indexPath], with: .automatic)
             self.tableView.reloadData()
             tableView.endUpdates()
-           
         }
     }
 
@@ -167,10 +197,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
     }
     
-    @objc private func toggleEditing() {
-        self.tableView.setEditing(!self.tableView.isEditing, animated: true) // Set opposite value of current editing status
-        navigationItem.rightBarButtonItem?.title = self.tableView.isEditing ? "Done" : "Edit" // Set title depending on the editing status
-    }
     
 }
 
